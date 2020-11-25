@@ -1,0 +1,24 @@
+Explicar: Servidor concurrente: atender a varios clientes al mismo tiempo.
+
+El procesador va ejectuando cada thread para que todos avancen.
+
+F: Atender Cliente, diversas funciones relacionadas con el Cliente.
+
+Por tanto, al un cliente logearse, se registrará su nombre en la lista de conectados
+Al desconectarse, log out, desaparecerá de la lista.
+
+Todo dentro de funciones 
+
+Acceso excluyente:
+Problema/Casos: Queremos el nº servicios. Cada Thread incrementa contador, MOV valor, implementar
+registro, mover valor al contador. Si se acaba tiempo CPU, si se salta a otro Thread cuando
+no ha acabado la secuencia de instrucciones de lenguaje máquina , 
+pasará al siguiente y al volver con el thread interrumpido, que tendrá el valor incializado
+a un valor obsoleto, sumará el contador y quedará igual que antes. 
+
+
+Modificación estructura de datos compartida. Dar el inicio a bloquearlo y a desbloquearlo cuando acaba.
+Solución:
+
+
+
